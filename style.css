@@ -1,12 +1,148 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .Site and .site-content are used for sticky bottom footer*/
+.site{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.site-content{
+    flex: 1;
+}
+
+a{
+    color:black;
+    text-decoration:none; 
+}
+a:hover{
+    text-decoration:underline;
+}
 .header{
-    font-size:13px;
-    margin-top: 24px;
+    font-size: 13px;
+    margin-top: 25px;
 }
 .headerleft{
     float: left;
-    padding-left:  10px;
+    padding-left:  20px;
 }
 .headerright{
     float: right;
-    padding-right: 10px;
+    padding-right: 20px;
 }
+#logo{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    width: 300px;
+    height: auto;
+  }
+#menu{
+    position: relative;
+    width: 20px;
+    opacity: 0.5;
+    top: -3px;
+}
+#menu:hover{
+    opacity: 1;
+}
+#account{
+    position: relative;
+    width: 35px;
+    top: -9px;
+}
+#account:hover{
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+#searchbar{
+    display: flex;
+    justify-content: center;
+}
+#search{
+    border-radius:24px;
+    width:  584px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    background-image: url(./img/search.jpg);
+    background-size: 30px;
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 38px;
+    font-size: 16px;
+}
+#search:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+#search:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 35px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #70757a;
+    padding: 0 20px;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+}
+@media only screen and (max-width:1200px) {
+    .footer-container{
+        justify-content: space-evenly;
+    }
+}
+
+.footer-child-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-child-l{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.footer-child-r{
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.footer-child-l:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-child-r:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
