@@ -59,6 +59,7 @@ a:hover{
     position: relative;
     width: 35px;
     top: -9px;
+    border-radius: 50%;
 }
 #account:hover{
     opacity: 1;
